@@ -8,8 +8,8 @@ service.init_db()
 @app.route('/')
 def index():
     
-    mysql_tasks = service.get_all_tasks()
-    return render_template('index.html', todo_list = mysql_tasks)
+    tasks = service.get_all_tasks()
+    return render_template('index.html', tasks = tasks)
 
 @app.route('/add', methods=['POST'])
 def add_task_ui():
