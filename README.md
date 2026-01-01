@@ -22,3 +22,7 @@ Follow these steps to run the project locally on your machine.
 ```bash
 git clone [https://github.com/nicatmhmmdv/flask-task-manager.git](https://github.com/nicatmhmmdv/flask-task-manager.git)
 cd flask-task-manager
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
