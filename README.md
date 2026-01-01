@@ -97,6 +97,7 @@ flask-task-manager/
 │   ├── base.html    # Layout Skeleton
 │   └── index.html   # Main Dashboard
 └── README.md        # Documentation
+
 🔮 Future Improvements
 Add functionality to "Delete" tasks.
 
