@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS tasks (
     status VARCHAR(50) DEFAULT 'Pending'
 );
 ```
-5. Run the Application
+### 5. Run the Application
 ```bash
 python app.py
 ```
