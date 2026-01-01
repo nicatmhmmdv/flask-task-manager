@@ -98,7 +98,8 @@ flask-task-manager/
 └── README.md        # Documentation
 ```
 
-🔮 Future Improvements
+🔮 Future Improvements 
+
 Add functionality to "Delete" tasks.
 
 Add functionality to "Mark as Done".
