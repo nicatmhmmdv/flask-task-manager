@@ -93,14 +93,14 @@ flask-task-manager/
 
 🔮 Future Improvements 
 
-Add functionality to "Delete" tasks.
+* Add functionality to "Delete" tasks.
 
-Add functionality to "Mark as Done".
+* Add functionality to "Mark as Done".
 
-Add User Login/Authentication.
+* Add User Login/Authentication.
 
-
-
+<br>
+<br>
 
 📝 License
 This project is open source.
