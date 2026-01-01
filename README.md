@@ -29,7 +29,7 @@ cd flask-task-manager
 pip install -r requirements.txt
 ```
 
-. Create a Virtual Environment
+3. Create a Virtual Environment
 It is recommended to use a virtual environment to manage dependencies.
 
 Windows:
@@ -47,10 +47,6 @@ Mac/Linux:
 python3 -m venv venv
 source venv/bin/activate
 ```
-3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
 4. Configure the Database
 You need a MySQL server running (e.g., via XAMPP, WAMP, or standalone MySQL).
 
@@ -60,11 +56,10 @@ Run the following SQL commands to set up the user and table:
 
 SQL
 
--- 1. Create the database
+1. Create the database
 CREATE DATABASE IF NOT EXISTS task_app_db;
 
--- 2. Create a secure user
--- (If you change the password here, update it in service.py too)
+2. Create a secure user (If you change the password here, update it in service.py too)
 ```bash
 CREATE USER IF NOT EXISTS 'task_user'@'%' IDENTIFIED BY 'secure_pass';
 GRANT ALL PRIVILEGES ON task_app_db.* TO 'task_user'@'%';
