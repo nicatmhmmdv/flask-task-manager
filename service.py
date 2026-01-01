@@ -1,10 +1,10 @@
 import mysql.connector
 
 db_config = {
-    'host': '192.168.100.50',
-    'user': 'task_user',         
-    'password': 'pass1234',          
-    'database': 'task_app_db'
+    'host': 'mysql_host',
+    'user': 'mysql_user',         
+    'password': 'password',          
+    'database': 'db_name'
 }
 
 def get_db_connection():
