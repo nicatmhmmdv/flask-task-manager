@@ -86,9 +86,8 @@ python app.py
 ```
 Open your browser and go to: http://127.0.0.1:5000
 
-📂 Project Structure
-Plaintext
-
+## 📂 Project Structure
+```text
 flask-task-manager/
 ├── app.py           # The Controller (Flask Routes)
 ├── service.py       # The Service Layer (Database Logic)
@@ -97,6 +96,7 @@ flask-task-manager/
 │   ├── base.html    # Layout Skeleton
 │   └── index.html   # Main Dashboard
 └── README.md        # Documentation
+```
 
 🔮 Future Improvements
 Add functionality to "Delete" tasks.
