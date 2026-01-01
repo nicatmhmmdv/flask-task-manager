@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Task Dashboard{% endblock %}
+
+{% block content %}
+    <h2>My Tasks</h2>
+
+    <form action="/add" method="POST" style="margin-bottom: 20px;">
+        <input type="text" name="title" placeholder="New Task Name" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in todo_list %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.title }}</td>
+                <td>
+                    {% if task.status == 'Pending' %}
+                        <span class="badge pending">{{ task.status }}</span>
+                    {% else %}
+                        <span class="badge done">{{ task.status }}</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="3" style="text-align: center;">No tasks found!</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

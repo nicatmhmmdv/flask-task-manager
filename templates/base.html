@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My App{% endblock %}</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .nav { background: #eee; padding: 10px; margin-bottom: 20px;}
+        table { width: 100%; border-collapse: collapse; }
+        td, th { border: 1px solid #ddd; padding: 8px; }
+        .badge { padding: 5px; color: white; border-radius: 4px; }
+        .pending { background-color: orange; }
+        .done { background-color: green; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <strong>Task Manager System</strong>
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
