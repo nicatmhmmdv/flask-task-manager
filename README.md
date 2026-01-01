@@ -20,7 +20,7 @@ Follow these steps to run the project locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/nicatmhmmdv/flask-task-manager.git](https://github.com/nicatmhmmdv/flask-task-manager.git)
+git clone https://github.com/nicatmhmmdv/flask-task-manager.git
 cd flask-task-manager
 ```
 
