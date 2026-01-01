@@ -65,17 +65,21 @@ CREATE DATABASE IF NOT EXISTS task_app_db;
 
 -- 2. Create a secure user
 -- (If you change the password here, update it in service.py too)
+```bash
 CREATE USER IF NOT EXISTS 'task_user'@'%' IDENTIFIED BY 'secure_pass';
 GRANT ALL PRIVILEGES ON task_app_db.* TO 'task_user'@'%';
 FLUSH PRIVILEGES;
+```
 
 -- 3. Create the table
+```bash
 USE task_app_db;
 CREATE TABLE IF NOT EXISTS tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     status VARCHAR(50) DEFAULT 'Pending'
 );
+```
 5. Run the Application
 ```bash
 python app.py
